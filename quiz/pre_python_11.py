@@ -8,7 +8,15 @@ print(gcd(12,6))
 6
 """
 def gcd(a, b):
-    for a1 in range(1, a + 1):
-        if
+    if a > b:
+        small_number = b
+    else:
+        small_number = a
 
-# 다시 검토
+    for i in range(1, (small_number + 1)):
+        if a % i == 0 and b % i == 0:
+            result = i
+
+    return result
+
+print(gcd(12, 6))
